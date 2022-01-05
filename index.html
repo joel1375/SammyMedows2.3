@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sammy Medows</title>
+  <!-- Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+  <img src="images/topContainer.png" alt="">
+  <div class="twitch">
+
+  </div>
+  <a href="javascript:void(0)" onclick="twitchClick()"> <img id="twitchView" src="images/twitchno.png" alt="">
+  </a>
+  <div class="discord">
+
+  </div>
+  <a href="javascript:void(0)" onclick="discordClick()"> <img id="discordView" src="images/discordno.png" alt="">
+  </a>
+  <div class="youtube">
+
+  </div>
+  <a href="javascript:void(0)" onclick="youtubeClick()"> <img id="youtubeView" src="images/youtubeno.png" alt="">
+  </a>
+  <div class="tiktok">
+
+  </div>
+  <a href="javascript:void(0)" onclick="tiktokClick()"> <img id="tiktokView" src="images/tiktokno.png" alt="">
+  </a>
+
+  <div class="social">
+
+
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <a href="javascript:void(0)" onclick="instaClick()"> <img id="instaView" src="images/instano.jpg" alt="">
+      </a>
+
+    </div>
+    <div class="col-6">
+      <a href="javascript:void(0)" onclick="twitterClick()"> <img id="twitterView" src="images/twitterno.jpg" alt="">
+      </a>
+
+    </div>
+
+  </div>
+  <div class="photo">
+
+  </div>
+
+  <img src="images/bottom.jpg" alt="">
+
+
+
+  <script type="text/javascript">
+    function twitchClick() {
+      var Image_Id = document.getElementById('twitchView');
+      if (Image_Id.src.match("twitchno.png")) {
+        Image_Id.src = "images/twitchyes.png";
+
+      } else {
+        Image_Id.src = "images/twitchno.png";
+      }
+      const myTimeouts = setTimeout(toNormal, 600);
+      const myTimeout = setTimeout(twitchClickGo, 1000);
+    }
+
+    function twitchClickGo() {
+      window.location.href = "https://www.twitch.tv/sammymedows"
+    }
+
+    function discordClick() {
+      var Image_Id = document.getElementById('discordView');
+      if (Image_Id.src.match("discordno.png")) {
+        Image_Id.src = "images/discordyes.png";
+
+      } else {
+        Image_Id.src = "images/discordno.png";
+      }
+      const myTimeouts = setTimeout(toNormal, 600);
+      const myTimeout = setTimeout(discordClickGo, 1000);
+    }
+
+    function discordClickGo() {
+      window.location.href = "https://discord.com/invite/MBMzdvk";
+    }
+
+    function youtubeClick() {
+      var Image_Id = document.getElementById('youtubeView');
+      if (Image_Id.src.match("youtubeno.png")) {
+        Image_Id.src = "images/youtubeyes.png";
+
+      } else {
+        Image_Id.src = "images/youtubeno.png";
+      }
+      const myTimeouts = setTimeout(toNormal, 600);
+      const myTimeout = setTimeout(youtubeClickGo, 1000);
+    }
+
+    function youtubeClickGo() {
+      window.location.href = "https://www.youtube.com/user/CorNationSam";
+    }
+
+    function tiktokClick() {
+      var Image_Id = document.getElementById('tiktokView');
+      if (Image_Id.src.match("tiktokno.png")) {
+        Image_Id.src = "images/tiktokyes.png";
+
+      } else {
+        Image_Id.src = "images/tiktokno.png";
+      }
+      const myTimeouts = setTimeout(toNormal, 600);
+      const myTimeout = setTimeout(tiktokClickGo, 1000);
+    }
+
+    function tiktokClickGo() {
+      window.location.href = "https://www.tiktok.com/@sammymedows";
+    }
+
+    function instaClick() {
+      var Image_Id = document.getElementById('instaView');
+      if (Image_Id.src.match("instano.jpg")) {
+        Image_Id.src = "images/instayes.jpg";
+
+      } else {
+        Image_Id.src = "images/instano.jpg";
+      }
+      const myTimeouts = setTimeout(toNormal, 600);
+      const myTimeout = setTimeout(instaClickGo, 1000);
+    }
+
+    function instaClickGo() {
+      window.location.href = "https://instagram.com/sammymedows?igshid=1gubblnpczbg";
+    }
+
+
+
+    function twitterClick() {
+      var Image_Id = document.getElementById('twitterView');
+      if (Image_Id.src.match("twitterno.jpg")) {
+        Image_Id.src = "images/twitteryes.jpg";
+
+      } else {
+        Image_Id.src = "images/twitterno.jpg";
+      }
+      const myTimeouts = setTimeout(toNormal, 600);
+      const myTimeout = setTimeout(twitterClickGo, 1000,);
+
+    }
+
+    function twitterClickGo() {
+      window.location.href = "https://twitter.com/intent/user?screen_name=sammymedows";
+    }
+
+
+
+    function toNormal() {
+      document.getElementById("twitchView").src = "images/twitchno.png";
+      document.getElementById("youtubeView").src = "images/youtubeno.png";
+      document.getElementById("tiktokView").src = "images/tiktokno.png";
+      document.getElementById("discordView").src = "images/discordno.png";
+      document.getElementById("instaView").src = "images/instano.jpg";
+      document.getElementById("twitterView").src = "images/twitterno.jpg";
+    }
+  </script>
+
+
+</body>
+
+</html>
